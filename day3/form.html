@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+</head>
+<body>
+    <h1>Create Your Account</h1>
+    <p>join us and get started today</p>
+    <br>
+    <form>
+        <label for = "name">Full Name</label>
+        <br>
+        <input type = "text" name = "username" id ="name" placeholder ="Enter Your full name">
+        <br><br>
+        <label for = "email">Email Address</label>
+        <br>
+        <input type = "email" name = "usermail" id ="email" placeholder ="Enter your email">
+        <br><br>
+        <label for = "password">password</label>
+        <br>
+        <input type = "password" name = "usermail" id ="password" placeholder ="Create a password">
+        <br><br>
+        <label for = "confirmpassword">Confirm Password</label>
+        <br>
+        <input type = "password" name = "confirm password" id ="confirmpassword" placeholder ="Confirm your password">
+        <br><br>
+    </form>
+    <form action="">
+        Gender<br><br>
+        <input type = "radio" name = "gender" id ="name" value = "Male">
+        <label for = "male">Male</label>
+        <input type = "radio" name = "gender" id ="name" value = "Female">
+        <label for = "female">Female</label>
+        <input type = "radio" name = "gender" id ="name" value = "Others">
+        <label for = "others">Others</label>
+        <br><br>
+        <label for ="DOB">Date Of Birth</label><br>
+        <input type="datetime-local" id = "DOB" placeholder="select your date of Birth">
+        <br><br>
+        <label for="">Country</label><br>
+        <select name = "country" id="">
+            <option value = "india">India</option>
+            <option value = "Usa">Usa</option>
+            <option value = "australia">Australia</option>
+            <option value = "Uk">Uk</option>
+        </select><br>
+        <br>
+        <input type ="checkbox" required>
+        <label for="">i agree to the <span style = "color:red">Terms of services</span> and <span style ="color:red;">Privacy Policy</span></label>
+        <br>
+        <button type ="submit">Register Now</button>
+        <p>Already have an account? <a href = "login.html">Login Here</a></p>
+    </form>
+</body>
+</html>

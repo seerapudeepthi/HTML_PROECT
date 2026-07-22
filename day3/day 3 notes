@@ -1,0 +1,54 @@
+BLOCK LEVEL ELEMENTS:
+=====================
+block level elements are the elements which occupies total space and always start on a new line eg : div tag , heading tag , list , table , paragraph
+
+INLINE ELEMENTS:
+================
+inline elements are the elements which occupies necessary space 
+which doesn't starts on a new line eg : span tag , anchor tag ,img tag , input tags 
+
+DIV AND SPAN ELEMENTS:
+=======================
+   DIV:
+   ------
+   division elements which is used to group the sections for applying styles
+   <div>
+      <h1>codegnan</h1>
+   </div>
+   SPAN:
+   ------
+   span tag is used to apply styles for group of elements
+
+SEMANTICS:
+==================
+semantics are used to convey the meaning about the content to the browser and developer
+
+<header>content</header>
+<nav>content</nav>
+<section>content</section>
+<aside>content</aside>
+<article>content</article>
+<footer>content</footer>
+
+NON-SEMANTICS:
+===============
+<div>content</div>
+<div>content</div>
+<div>content</div>
+<div>content</div>
+<div>content</div>
+<div>content</div>
+
+FORMS:
+=======
+-->forms are used to collect data from the user and allowing users to submit data to server
+-->eg:signup,registrations,login,contact
+-->forms are defined with form tag 
+-->form fields are defined with input tag
+<form>
+</form>
+
+1)
+
+2) placeholder : conveys the meaning about the form field fills the space
+3)
