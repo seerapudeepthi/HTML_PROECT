@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href = "demo.css">
+    <style>
+        h2{color:green;
+        }
+        .title{
+          color:purple;
+          background : yellow;
+          width : 40%;
+          height : 200px;
+          padding : 10px 20px 30px 40px;
+          border : 10px outset blue;
+          border-radius :20px;
+
+          margin : 20px 10px 30px 40px;
+          display : inline-block;
+          background-image: url('https://static.vecteezy.com/system/resources/thumbnails/049/855/932/small/stunning-high-resolution-nature-and-landscape-backgrounds-breathtaking-scenery-in-hd-free-photo.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-size: contain;
+          background-size: 100% 100%;
+          /*background-attachment:fixed;*/
+        
+        }
+        #colors{
+        color : blue;
+      }
+      div{background:lightblue ;
+          width:75%;
+          padding:30px;
+          height: 200px;
+          margin :20px;}
+    span{
+            background: red;
+            /* for inline elements width,height and margin will not be applied*/
+            width : 500px;
+            height : 300px;
+            padding : 20px;
+            margin : 20px;
+            /*display:inline-block;-->it will behaves like inline but takes propeties like block level*/
+          }
+    </style>
+</head>
+<body>
+    <div>block level element</div>
+    <h1 style ='color:red;'>inline content</h1>
+    <h2 class = "title">internal content</h2>
+    <h2 class = "title">internal content</h2>
+    <h2 class = "title">internal content</h2>
+    <h2 class = "title">internal content</h2>
+    <h3 id = "colors">external content</h3>
+    
+</body>
+</html>

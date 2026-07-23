@@ -1,0 +1,94 @@
+CSS:
+======
+cascading style sheets
+cascading --> flowing
+styles --> properties
+sheets --> doc
+-->css means used to describe the presentation of a html document and it deals with colors,text,fonts,backgrounds,animations,layouts and media queries
+
+HOW TO INSERT CSS:
+==================
+1)INLINE CSS : styles are added to the html element itself by using style attribute <h1 style = 'color:red;'>inline content</h1>
+2)INTERNAL CSS : styles are added to the html document using style tag in head section 
+  <style>
+    </style>
+  SELECTORS : used to target the html elements for applying styles
+  syntax : selector{
+          declaration
+          property : value;
+          }
+
+        eg: h2
+           {color:green;
+           }
+3)EXTERNAL CSS : styles are defined in external file that has .css extension
+
+HIGH SPECIFICITY : high precedence
+inline having high SPECIFICITY
+based on how we define - preferred internal then external 
+
+TYPES OF SELECTORS:
+===================
+1) simple SELECTORS:
+=======================
+  a)element selector or tagname selector : styles will be applied based on a element
+     h1{
+        color:red;
+     }
+  b) class selector : used to apply styles to the multiple elements
+      .title{
+          color:green;
+           }
+        <h1 class ="title title2">inline content</h1>
+        <h2 class ="title">internal content</h2>
+        <h3 class ="title">external content</h3>
+
+        -->can take multiple class names
+        .title1{
+            color:green;
+             }
+        .title2{
+                color:yellow;
+            }
+
+  c)id selector : denoted by #idname  
+      #colors{
+        color : blue;
+      }
+
+specificity in selectors:
+===========================
+1)id having high specificity
+2)class having medium specificity
+3)tagname having low specificity
+
+BOX MODEL:
+==========
+it declares the rectangular boxes that are generated for elements in the document
+1)content : 
+
+
+2)padding: it is space around the content
+
+padding : 20px;
+padding : top - 10px right- 20px left-30px bottom-40px;
+padding : 10px 20px 30px;
+padding : top/bottom left/right
+
+3)border : lines around the padding 
+
+border : 1px (thickness) solid color : black;
+styles --> solid,dotted,dashed,double,inset,outset,ridge,groove,none
+border-radius : 20px;
+
+4)margin : space around the element or between the elements
+
+
+
+
+
+
+
+
+
+2) combinators
