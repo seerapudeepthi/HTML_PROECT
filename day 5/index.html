@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+        /*combinators : used to apply styles based on a relation(reference)
+        /*children selector : only header child can have the direct child*
+        descendent selector : used to apply styles to all childs
+        universal selector : used to apply styles to every element
+        BOILER PLATE CODE
+
+        TEXT PROPERTIES:
+        1)text-align : center right left;
+        2)text-shadow : hoffset voffset blurradius color
+        3)text-shadow:1px 1px 5px black;
+        h1{
+            text-shadow : 0px 0px 1px rgb(216,277,87);
+        }
+        */
+        header{
+            position: sticky;
+            top:0;
+            z-index: 10;
+        }
+        header{
+            background-color: rgb(16, 16, 69);
+            text-align : center;
+            padding : 40px
+        }
+        header > button {
+            color : white;
+            background: blue;
+            padding : 15px;
+            margin : 10px;
+            border-radius : 10px;
+        }
+        .s1{
+            text-align : center;
+            background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url('https://wallpapers.com/images/featured/laptop-murjp1nk4lp1idlt.jpg');
+            height : 400px;
+            background-size: 100% 100%;
+            color : whitesmoke;
+            padding : 150px 20px;
+        }
+        .box{
+            width : 100px;
+            height: 100px;
+            color : whitesmoke;
+            display:inline-block;
+            margin : 10px;
+            border-radius:20px;
+            padding : 30px;
+            box-shadow: 0px 0px 10px rgb(4,4,2);
+        }
+        h2{
+            text-shadow: -2px 2px 6px purple;
+        }
+        .s2{
+            text-align : center;
+            padding : 20px;
+        }
+        .s3{
+            background-color: whitesmoke;
+            text-align: center;
+            padding : 50px;
+        }
+        .s4{
+            width : 50%;
+            text-align: center;
+            margin : auto;
+            transition: all 1s;
+        }
+        .block{
+            text-align: left;
+            background-color: whitesmoke;
+            padding: 20px;
+            margin : 10px;
+            background-color: rgb(180,201,255);
+            transition: all 5s;
+
+        }
+        .card{
+            padding : 50px;
+            margin:10px;
+            width:30%;
+            display:inline-block;
+            border: 2px solid blue;
+            border-radius: 10px;
+            height : 200px;
+            box-shadow: 0px 0px 4px 0px rgb(4,4,2);
+            transition: all 1s;
+        }
+        .card:hover{
+            transform: (0px,-20px);
+        }
+        .box:hover{
+            background-color: blue;
+            transform: translate(0px,40px);
+        }
+        .s5{
+            text-align:center;
+            background-color: black;
+            color: white;
+            padding : 1px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <button>Home</button>
+        <button>About</button>
+        <button>Services</button>
+        <button>Contact</button>
+    </header>
+    <section class="s1">
+        <h1>Learn CSS Through Projects</h1>
+        <p>Welcome to your first CSS project! By modifying the code inside the style tags, 
+            you can completely change how this paragraph content looks on the screen.</p>
+    </section>
+    <section class="s2">
+        <h2>CSS Colors</h2>
+        <div class="parent">
+            <div class ="box" style="background:red">content</div>
+            <div class ="box" style="background:purple">content</div>
+            <div class ="box" style="background:blue">content</div>
+            <div class ="box" style="background:orange">content</div>
+        </div>
+    </section>
+    <section class="s3">
+        <h1>Box Model</h1>
+        <div class="parent">
+            <div class="card">
+                <h3>Card One</h3>
+                <p>padding creates space inside the element.border surrounds the content.margin creates space outside the element</p>
+            </div>
+            <div class="card">
+                <h3>Card Two</h3>
+                <p>padding creates space inside the element.border surrounds the content.margin creates space outside the element</p>
+            </div>
+            <div class="card">
+                <h3>Card Three</h3>
+                <p>padding creates space inside the element.border surrounds the content.margin creates space outside the element</p>
+            </div>
+        </div>
+    </section>
+
+    </section>
+    <section class="s4">
+        <h1>CSS Fonts</h1>
+        <br>
+        <div class="parent">
+            <div class="block">Light Font Weight(300)</div>
+            <div class="block">Normal Font Weight(400)</div>
+            <div class="block">Bold Font Weight(700)</div>
+            This paragraph demonstrates font-family,font-size,letter-spacing, line-height and font-weight properties.
+        </div>
+    </section>
+
+        </div>
+    </section>
+    <footer class="s5">
+        CSS STYLES @Copyrights codegnan
+    </footer>
+</body>
+</html>
