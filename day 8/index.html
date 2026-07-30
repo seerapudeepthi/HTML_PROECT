@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header,footer{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header a {
+            color: white;
+            padding: 3px;
+            text-decoration: none;
+            transition: all 1s;
+        }
+
+        header a:hover {
+            color: green;
+            border-bottom: 2px solid green;
+        }
+
+        header span {
+            border: 3px solid green;
+            margin: 5px;
+            color: green;
+        }
+
+        .s1 {
+            display: flex;
+            background-color: black;
+            color: white;
+            align-items: center;
+            font-size: 1.5rem;
+            line-height: 3rem;
+        }
+
+        .s1 span {
+            color: green;
+        }
+
+        .s1 img {
+            width: 100%;
+        }
+
+        .s1 div {
+            flex-basis: 50%;
+            padding: 5%;
+        }
+
+        .s2 {
+            padding: 1%;
+            background-color: black;
+        }
+
+        .s2 div {
+            background-color: black;
+            color: white;
+            height: 80vh;
+            background-color: rgb(38, 34, 34);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .s2 h1 {
+            background-color: green;
+            color: white;
+            padding: 40px;
+        }
+
+        .btn1 {
+            background-color: rgb(11, 118, 11);
+            padding: 10px;
+        }
+
+        .btn2 {
+            padding: 10px;
+            background-color: transparent;
+            border: 2px solid green;
+            color: white;
+        }
+        .s3{
+            background-color: black;
+            color: white;
+            text-align:center;
+            height:90vh;
+            padding:20px;
+        }
+        .parent{
+            display: flex;
+            gap:5%;
+            padding:4%;
+        }
+        .card{
+            background-color:rgb(38, 34, 34);
+            height: 60vh;
+            padding:20px;
+            line-height:2;
+            transition: all 1s;
+            border:2px solid black;
+        }
+        .card:hover{
+            border:2px solid green;
+            transform: translate(0px,-10px);
+        }
+        .s3 i{
+            padding:20px;
+            font-size:3rem;
+            color: green;
+        }
+        .s4{
+            background-color: black;
+            text-align: center;
+            color: white;
+            padding:1%;
+        }
+        .projectparent{
+            display:flex;
+            justify-content: center;
+            line-height: 1.5;
+            gap:10px;
+            padding:2%;
+        }
+        .s4 img{
+            width:100%;
+            height:250px;
+
+        }
+        .child{
+            flex-basis:30%;
+            padding:5%;
+            background-color: rgb(38, 34, 34);
+        }
+        .row1{
+            background-color: green;
+            box-sizing: border-box;
+        }
+        .row2{
+            background-color: rgb(38, 34, 34);
+            box-sizing: border-box;
+            flex-basis:20%;
+        }
+        .s5{
+            text-align:center;
+            background-color: black;
+            color:white;
+            flex-basis:50%;
+            text-align: center;
+        }
+        .s5 table{
+            margin:0 auto;
+        }
+        .s6{
+            background-color: black;
+            color:white;
+            display:flex;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+        }
+        .s6>div{
+            flex-basis:45%;
+            padding:5%;
+        }
+        li::marker{
+            color:green;
+            font-size:2rem;
+        }
+        .hi span{
+            color: green;
+        
+        }
+        .hi{
+            line-height:2rem;
+        }
+
+        @media screen and (width<550px) {
+
+            .s1,
+            header,.parent,.projectparent,.s6{
+                flex-direction: column;
+            }
+            .s3{
+                height:100%;
+            }
+            html{
+                font-size:13px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1> <span>SD</span> Seerapu Deepthi</h1>
+        </div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#Achievements">Achievements</a>
+            <a href="#Education">Education</a>
+            <a href="#Projects">Projects</a>
+            <a href="#contacts">Contacts</a>
+        </nav>
+    </header>
+    <section class="s1">
+        <div>
+            <h1>Hi,I'm <span> Seerapu Deepthi</span></h1>
+            <h2>I build simple and clean websites</h2>
+            <p>I am web development student who loves turning ideas into real,working web pages</p>
+            <button class="btn1">View Project</button>
+            <button class="btn2">Download Cv</button>
+        </div>
+        <div>
+            <img src="https://img.magnific.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?semt=ais_test_b&w=740&q=80"></a>
+        </div>
+    </section>
+    <section class="s2">
+        <div>
+            <h1>Fullstack Dev</h1>
+        </div>
+    </section>
+    <section class="s3">
+        <h1>What I Do</h1>
+        <div class="parent">
+            <div class="card">
+                <i class="fa-solid fa-desktop"></i>
+                <h2>Web Design</h2>
+                <p>Design clean and attractive websites that provides great user experience</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-desktop"></i>
+                <h2>Development</h2>
+                <p>Design clean and attractive websites that provides great user experience</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>Performance</h2>
+                <p>Design clean and attractive websites that provides great user experience</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-desktop"></i>
+                <h2>Web Design</h2>
+                <p>Design clean and attractive websites that provides great user experience</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="s4">
+        <h1>My Projects</h1>
+        <div class="projectparent">
+            <div class="child">
+                <div><img src="https://cdn.vectorstock.com/i/500p/91/31/colorful-brushstroke-portfolio-poster-vector-21849131.jpg"></div>
+                <h2>Portfolio website</h2>
+                <p>a short introductory summary that tells readers who you are, what you do, and what skills you have</p>
+                <br>
+                <button class="btn2">View Project</button>
+            </div>
+            <div class="child">
+                <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYNVvyG5JcoaVD3czMlUSp7sRQxjBX7-MG_2zx-aaEn5YYkgOZtV7cppcR&s=10.jpg"></div>
+                <h2>Student Registration Form</h2>
+                <p>the official process where a school or college collects personal details, contact information, and course choices to enroll a learner for an academic term</p>
+                <br>
+                <button class="btn2">View Project</button>
+            </div>
+            <div class="child">
+                <div><img src="https://m.media-amazon.com/images/I/61MUR89OpzL.jpg"></div>
+                <h2>Simple Calculator</h2>
+                <p>a small tool for math that handles addition, subtraction, multiplication, and division. It gives fast, easy answers for everyday tasks like shopping, school, and home budgets.</p>
+                <br>
+                <button class="btn2">View Project</button>
+            </div>
+        </div>
+    </section>
+    <section class="s5">
+      <h1>Education</h1>
+      <br>
+      <table width="90%" height="200">
+        <tr class="row1">
+          <th>Qualification</th>
+          <th>Institution</th>
+          <th>Year</th>
+          <th>Location</th>
+          </tr>
+          <tr class="row2">
+            <td>high school</td>
+            <td>sasi school</td>
+            <td>2018-2020</td>
+            <td>New York,USA</td>
+          </tr>
+          <tr class="row2">
+            <td>Bachelor of computer science</td>
+            <td>Raghu university</td>
+            <td>2022-2025</td>
+            <td>New York,USA</td>
+          </tr>
+        </table>
+    </section>
+    <section class="s6">
+        <div>
+            <h2>Achievements</h2>
+            <ul>
+            <li>completed HTML and CSS fundamentals course</li>
+            <li>built multiple small projects</li>
+            <li>completed HTML and CSS fundamentals course</li>
+            <li>built multiple small projects</li>
+            </ul>
+            </div>
+            <div class="hi">
+                <h2>contact</h2>
+                <div><span><i class="fa-solid fa-envelope"></i></span> email:deepthiseerapu2004@gmail.com</div>
+                <div><span><i class="fa-solid fa-envelope"></i></span> phone:+91 7416364639</div>
+                <div><span><i class="fa-solid fa-envelope"></i></span> website:www.github.com</div>
+                <div><span><i class="fa-solid fa-envelope"></i></span> Location:vizag</div>
+            </div>
+    </section>
+    <footer>
+        <h3>@ 2026 Seerapu Deepthi.All rights reserved. </h3>
+        <div>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </footer>
+
+</body>
+
+</html>
