@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header a {
+            color: white;
+            padding: 3px;
+            text-decoration: none;
+            transition: all 1s;
+        }
+
+        header a:hover {
+            color: green;
+            border-bottom: 2px solid green;
+        }
+
+        header span {
+            border: 3px solid green;
+            margin: 5px;
+            color: green;
+        }
+
+        .s1 {
+            display: flex;
+            background-color: black;
+            color: white;
+            align-items: center;
+            font-size: 1.5rem;
+            line-height: 3rem;
+        }
+
+        .s1 span {
+            color: green;
+        }
+
+        .s1 img {
+            width: 100%;
+        }
+
+        .s1 div {
+            flex-basis: 50%;
+            padding: 5%;
+        }
+
+        .s2 {
+            padding: 1%;
+            background-color: black;
+        }
+
+        .s2 div {
+            background-color: black;
+            color: white;
+            height: 80vh;
+            background-color: rgb(38, 34, 34);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .s2 h1 {
+            background-color: green;
+            color: white;
+            padding: 40px;
+        }
+
+        .btn1 {
+            background-color: rgb(11, 118, 11);
+            padding: 10px;
+        }
+
+        .btn2 {
+            padding: 10px;
+            background-color: transparent;
+            border: 2px solid green;
+            color: white;
+        }
+        .s3{
+            background-color: black;
+            color: white;
+            text-align:center;
+            height:90vh;
+            padding:20px;
+        }
+        .parent{
+            display: flex;
+            gap:5%;
+            padding:4%;
+        }
+        .card{
+            background-color:rgb(38, 34, 34);
+            height: 60vh;
+            padding:20px;
+            line-height:2;
+            transition: all 1s;
+            border:2px solid black;
+        }
+        .card:hover{
+            border:2px solid green;
+            transform: translate(0px,-10px);
+        }
+        .s3 i{
+            padding:20px;
+            font-size:3rem;
+            color: green;
+        }
+
+        @media screen and (width<550px) {
+
+            .s1,
+            header,.parent {
+                flex-direction: column;
+            }
+            .s3{
+                height:100%;
+            }
+            html{
+                font-size:13px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1> <span>SD</span> Seerapu Deepthi</h1>
+        </div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#Achievements">Achievements</a>
+            <a href="#Education">Education</a>
+            <a href="#Projects">Projects</a>
+            <a href="#contacts">Contacts</a>
+        </nav>
+    </header>
+    <section class="s1">
+        <div>
+            <h1>Hi,I'm <span> Seerapu Deepthi</span></h1>
+            <h2>I build simple and clean websites</h2>
+            <p>I am web development student who loves turning ideas into real,working web pages</p>
+            <button class="btn1">View Project</button>
+            <button class="btn2">Download Cv</button>
+        </div>
+        <div>
+            <img
+                src="https://img.magnific.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?semt=ais_test_b&w=740&q=80"></a>
+        </div>
+    </section>
+    <section class="s2">
+        <div>
+            <h1>Fullstack Dev</h1>
+        </div>
+    </section>
+    <section class="s3">
+        <h1>What I Do</h1>
+        <div class="parent">
+            <div class="card">
+                <i class="fa-solid fa-desktop"></i>
+                <h2>Web Design</h2>
+                <p>Design clean and attractive websites that provides great user experience</p>
+            </div>
+            <div class="card">
+                <i class="fa-sharp fa-code"></i>
+                <h2>Development</h2>
+                <p>Design clean and attractive websites that provides great user experience</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>Performance</h2>
+                <p>Design clean and attractive websites that provides great user experience</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-desktop"></i>
+                <h2>Web Design</h2>
+                <p>Design clean and attractive websites that provides great user experience</p>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
