@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "container">
+   <!--<button onclick='console.log("inline js")'>click me</button>-->
+   <!--<script>console.log("internal js")</script>
+   <script src="demo.js"></script>-->
+   <script>
+    var a =10;
+    let b = 20;
+    const c = 30;
+    console.log(a,b,c)
+    </script>
+    <script>
+    //initialization
+      var a;
+      console.log(a)
+    // assigment
+      var d;
+      d = 20
+      console.log(d)
+    // declaration
+      var f = 40
+      console.log(f)
+
+      console.log(e)
+    </script>
+    <script>
+        //hoisting
+        console.log(z)
+        var z
+    </script>
+    <script>
+        // strings
+        var s = 'hello world'
+        console.log(s[0])
+        s[0] = 'z'
+        console.log(s)//hello world
+    </script>
+    <script>
+       var n = 10
+       var m = -11
+       var num = 10.2
+       console.log(n,m,num)
+    </script>
+    <script>
+        //boolean true or false
+        var isadmin = true;
+        var isadmin = false;
+        var membership = true;
+        var isactive = true;
+        console.log(isadmin) 
+    </script>
+    <script>
+        //undefined
+        var a
+        console.log(a)
+        //null 
+        var id = null
+        var empname = null
+        console.log(10+id)
+        //non primitive data types 
+        //1.arrays : used to store multiple values in a single varibales stores both homo and hetero genies data types
+        var arr = [1,true,'hello']
+        console.log(arr)
+        console.log(arr[2])
+        arr[2] = 'hello world'
+        console.log(arr)
+        //dictionaries
+        //objects : stores collection of data in key value pairs
+        let data = [2,25,3]
+        let obj ={
+            batchno : 2,
+            batchcount : 25,
+            pfsbatch : 3
+
+        }
+        obj.batchcount = 30;
+        console.log(obj)
+        console.log(obj.batchcount)
+        console.log(obj['pfsbatch'])
+        //functions 
+        function greet(){
+            console.log('hello world')
+        }
+        greet()
+        //datatypes
+        var a = 2
+        var b = 10.2
+        var c = true
+        var d = -10
+        var s = 'hello'
+        var arr = [1,'true',50]
+        console.log(typeof(a))
+        console.log(typeof(b))
+        console.log(typeof(c))
+        console.log(typeof(d))
+        console.log(typeof(arr))
+        console.log(typeof(s))
+        console.log(typeof(greet))
+        console.log(typeof(obj))
+        //input
+        <script>
+
+        var marks = prompt('enter your marks')
+        var grade=''
+        if (marks>80){
+            grade = 'A'
+        }else if(marks > 35){
+            grade = 'B'
+        }else{
+            grade='F'
+        }
+        let container=document.getElementById('container')
+        container.innerHTML=`your grade is <h1>${grade}</h1>`
+        console.log(grade)
+
+</script>
+</body>
+</html>
