@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr;
+        }
+    </style>
+</head>
+
+<body>
+    <div id ="container"></div>
+    <script>
+        /*
+          loops:
+          ========
+          for reusability eg : amazon carts
+          1)for loop ==> when we know iterations
+          2)while ==> it is also called as event controlled loop - when we dont know the iterations
+          3)for in ==> used to iterate the objects,arrays, and strings
+  
+          control statements:
+          ====================
+          1)break ==> used to terminate the block of code when interpreter touches the break
+          2)continue ==> used to skip current iteration
+  
+         functions:
+         ===========
+        1)functions are block of reusable code that is used to perform a particular action when something invokes it
+        2)functions are defined with function keyword followed by function name followed by () may include paramenters and followed by block of code
+        3)function name stores function definition
+        return:
+        ========
+        1)return used to store the value of function,also used to terminate the function block
+        2)statements after return will not be executed
+        3)named funcs can only be hoisted
+  
+          /*for(let i =1;i<10;i++){
+          console.log(i)
+          }
+   
+          while(true){
+                       let inp = prompt('enter items')
+                       console.log(inp)
+                     if(inp == 'done'){
+                       console.log('order completed')
+                       break
+                     }
+                   }
+  
+          let i = 5
+          do {
+              console.log(i)
+              i++
+          } while (i % 2 == 0)
+  
+      let arr = ['html','css','js']
+      for(let i in arr){
+          console.log(i)
+          console.log(arr[i])
+      } 
+  
+      let obj = {name:'john',age:25}
+      for(let i in obj){
+          console.log(i)
+          console.log(obj[i])
+      }
+  
+      let str = 'hello world'
+      for(let i in str){
+          console.log(i)
+          console.log(str[i])
+      }
+  
+      let arr=['html','css','js']
+      for(let i of arr){
+          console.log(i)
+      }
+      let str = 'hello'
+      for(let i of str){
+          console.log(i)
+      }
+
+    //continue
+
+      let data = [
+          {productid : 23434,status:'expired'},
+          {productid : 234,status:'not expired'},
+          {productid : 34,status:'expired'},
+          {productid : 2343344,status:'not expired'},
+          {productid : 239434,status:'expired'},
+      ]
+      for(let i of data){
+          if(i.status == 'expired'){
+              continue
+          }
+          console.log(i)
+      }
+
+   // break
+
+      let password ='1234'
+      let c = 0
+      while(true){
+          let inp =prompt('enter your password')
+          if(inp == password){
+              console.log('welcome to banking')
+              break
+          }
+          c++
+          if(c==3){
+              console.log('card is blocked')
+              break
+          }
+      }
+
+      //function definition or func declaration
+      function greet(name){
+        console.log(`hello ${name}`)
+      }
+      greet('john')
+      greet('jessy')
+      greet('good mrng')
+      console.log(greet)//func definition
+      console.log(greet('jessy'))
+
+      function greet(name){
+        console.log(`hello ${name}`)
+        return name
+        console.log('hi')
+      }
+      greet('john')*/
+</script>
+
+<script>
+    let students = [
+        {name:'john',marks:65},
+        {name:'raju',marks:32},
+        {name:'ravi',marks:85},
+        {name:'dinesh',marks:95},
+        {name:'deepthi',marks:35},
+    ]
+
+    for( i of students){
+    grade=''
+    if(i.marks > 70){
+        grade = 'A'
+    }else if(i.marks > 35){
+        grade = 'B'
+    }else{
+        grade = 'F'
+    }
+    let container = document.getElementById('container')
+
+let output = `
+<div class = 'card'>
+    <h1>${i.name}</h1>
+    <div>${i.marks}</div>
+    <p>${grade}</p>
+</div>
+`
+container.innerHTML += output
+console.log(output)
+}
+</script>
+</body>
+
+</html>
