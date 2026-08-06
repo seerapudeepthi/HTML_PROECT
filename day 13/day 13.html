@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        TYPES OF FUNCTIONS:
+        ====================
+        1)named function
+        2)arrow function:more concise
+        we can eliminate return if there is a single statement
+        3)anonymous function:function that defined without a func name
+        4)callback function : it is when a function definition is passed to another func as an argument and later execute on outer function
+        addtocart --- payment----order*/
+        let arrowfun1 = (a,b)=>(a+b)
+        function sum(a,b){
+            return a + b
+        }
+        let val = sum(2,3)
+        console.log(val)
+
+        let arrowsfun = (a,b)=>a+b
+        console.log(arrowsfun(2,3))
+        console.log(arrowsfun(5,3))
+        
+        let arrowfun = (a,b)=>a+a
+        console.log(arrowfun(2))
+        console.log(arrowfun(5))
+
+        let arrowssfun = (a,b)=>{
+            return a+b
+        }
+        console.log(arrowssfun(1,2))
+
+        let an = function(){
+            console.log('hello world')
+        }
+        an()
+
+        //callback
+        function addtocart(callback){
+            console.log('products added to card')
+            callback(order)
+        }
+        function payment(callback){
+            setTimeout(()=>{
+            console.log('payment completed')
+            callback()
+            },7000)
+        
+        }
+        function order(){
+            console.log('order placed')
+        }
+        addtocart(payment)
+
+        //closures : when a inner func having access and can able to change the variables which is declared in outer function even after the execution
+
+        function outer(){
+            let count = 0
+            console.log('outer function executed')
+            return function(){
+                count++
+                console.log(count)
+                console.log('inner function executed')
+            }
+
+        }
+        let a = outer()
+        a()
+        a()
+        a()
+        a()
+        a()
+        //outer()()
+        //outer()()
+</script>
+</body>
+</html>
